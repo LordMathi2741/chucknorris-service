@@ -1,0 +1,14 @@
+
+<h1> All Jokes </h1>
+<div style="display:flex; justify-content:center; align-items: center; flex-wrap: wrap; padding: 20px;">
+  @for(item of jokes; track item){
+    <mat-card style="width: 400px; margin: 20px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+      <mat-card-content style="text-align: center;">
+        <p> Id: {{ item.id }} </p>
+        <p> Value: {{ item.value }}</p>
+        <p> Categories: {{ item.categories }}</p>
+      </mat-card-content>
+    </mat-card>
+  }
+
+</div>
